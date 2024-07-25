@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+  <h2>Chat Messages</h2>
+  <div id="chat"></div>
+  <hr /> 
+  Username: <input type="text" id="username"> <br>
+  Room: <input type="text" id="room"> <br>
+  <button id="joinRoom">Join Room</button> <br>
+  <textarea id="message" placeholder="message"></textarea>
+  <button id="send">Send</button>
+  <button id="callVideo">Call Video</button> <!-- زر مكالمة الفيديو -->
+  <div id="chat"></div>
+  <div id="broadcast"></div>
+  <video id="localVideo" autoplay></video>
+  <video id="remoteVideo" autoplay></video>
+  <script type="text/javascript" src="/public/client.js"></script>
+</body>
+</html>
